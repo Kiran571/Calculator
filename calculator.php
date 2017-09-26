@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -104,8 +102,25 @@ body{
 
 	function answerTextTag()
 	{
-    var str = "How are you doing today?";
-    var res = str.split(" ");
-    document.getElementById("input_text").value = res;
+		var a = parseInt("10");
+		var b = parseInt("10");
+		var c = a+b;
+
+    var str = document.getElementById("input_text").value;
+    var res = str.split("");
+    document.getElementById("input_text").value = res;//display the splited value
+
+    var temp = new Array();
+    var temp = str.split("");
+    for (a in temp ) {
+   	 if (isNaN(temp[a])) 
+   	 {
+   	 console.log (temp[a] = temp[a]);
+	 }
+	 else
+	 {
+	 	console.log (temp[a] = parseInt(temp[a], 10));
+	 }
+	}
 	}
 </script>
